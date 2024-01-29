@@ -1,0 +1,30 @@
+
+
+
+#choices-container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-nav-purple {
+  color: blueviolet;
+}
+
+.custom-btn-purple {
+  background-color: blueviolet;
+  color: white;
+}
+
+.custom-ul {
+    list-style: none; 
+    padding: 0;
+}
+
+#save-name {
+  margin-top: 20px;
+  padding: auto;
+  margin: 5px;
+}

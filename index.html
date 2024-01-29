@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header id="top-bar" style="margin-bottom: 50px; padding: 10px;">
+        <ul class="nav nav-pills justify-content-between">
+            <li class="nav-item">
+              <a id="score-button" class="nav-link custom-nav-purple" aria-current="page" href="#">View Top Scores</a>
+            </li>
+            <li class="nav-item">
+              <p id="timer" class="nav-link">Time: 60</p>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container-sm d-flex justify-content-center align-items-center">
+            <div class="container-lg align-self-center p-2 bd-highlight">
+                <section id="start-content" class="container-lg text-center" style="display: block;">
+                    <h1>Quiz</h1>
+                    <p>This is a multiple choice quiz to test your knowledge</p>
+                    <button id="start-button" class="btn btn-primary custom-btn-purple">Start</button>
+                </section>
+                <section id="quiz-content" style="display: none;">
+                    <h2>Quiz Questions</h2>
+                    <ol class="custom-ul">
+                        <li>
+                            <button id="button1" type="button" class="btn btn-primary custom-btn-purple mb-2">
+                                <span class="list-number">1.</span> Option
+                            </button>
+                        </li>
+                        <li>
+                            <button id="button2" type="button" class="btn btn-primary custom-btn-purple mb-2">
+                                <span class="list-number">2.</span> Option
+                            </button>
+                        </li>
+                        <li>
+                            <button id="button3" type="button" class="btn btn-primary custom-btn-purple mb-2">
+                                <span class="list-number">3.</span> Option
+                            </button>
+                        </li>
+                        <li>
+                            <button id="button4" type="button" class="btn btn-primary custom-btn-purple mb-2">
+                                <span class="list-number">4.</span> Option
+                            </button>
+                        </li>
+                    </ol>
+                    <section id="response">
+                    </section>
+                </section>
+                <section id="end-content" style="display: none;">
+                    <section class="d-flex justify-content-center flex-wrap"></section>
+                    <div class="text-center">
+                        <h1>All done!</h1>
+                        <p>Your final score is <span id="score"></span>.</p>
+                    </div>
+                    <form class="text-center">
+                        <label id="save-name" for="userId" class="row-2 visually-hidden font-weight-bold">Enter Your Name to Save Score:</label>
+                        <div class="row justify-content-center">
+                            <input id="save-name" type="password" class="col-3 form-control" id="userId" placeholder="Display Name">
+                            <button id="save-name" type="submit" class="col-2 btn btn-primary custom-btn-purple mb-3">Submit</button>
+                        </div>
+                    </form>
+                </section>
+                <section id="score-content" style="display: none;">
+                    <h1>Top Scores:</h1>
+                    <ul class="list-group">
+                         <li class="list-group-item list-group-item-dark"></li>
+                         <li class="list-group-item list-group-item-dark"></li>
+                         <li class="list-group-item list-group-item-dark"></li>
+                         <li class="list-group-item list-group-item-dark"></li>
+                         <li class="list-group-item list-group-item-dark"></li>
+                    </ul>
+                    <button id="restart-button" type="button" class="btn btn-primary btn-sm">Go Back</button>
+                    <button type="button" class="btn btn-secondary btn-sm">Clear high scores</button>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
